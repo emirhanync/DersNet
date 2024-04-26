@@ -13,9 +13,17 @@
         android:theme="@style/Theme.Otomat"
         tools:targetApi="31">
         <activity
+            android:name=".fragments.Admin_sayfa"
+            android:exported="false" />
+        <activity
+            android:name=".ogretmen_sayfa"
+            android:exported="false" />
+        <activity
+            android:name=".Ogrenci_safya"
+            android:exported="false" />
+        <activity
             android:name=".Secim"
             android:exported="false" />
-
         <activity
             android:name=".SplashScreen"
             android:exported="true"

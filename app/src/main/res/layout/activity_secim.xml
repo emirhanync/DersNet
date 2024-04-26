@@ -7,13 +7,15 @@
     android:background="@drawable/custom_background"
     android:orientation="vertical"
     tools:context=".Secim">
+
     <ImageView
-        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/logo"
 
         />
+
     <TextView
 
         android:layout_width="match_parent"
@@ -30,10 +32,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="25dp"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
 
@@ -217,22 +219,45 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/singIn"
+                android:id="@+id/girisYapBtnId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="24dp"
+                android:layout_marginBottom="40dp"
                 android:elevation="15dp"
                 android:gravity="center"
                 android:text="GİRİŞ"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="40dp"
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17sp"
                 app:backgroundTint="@color/dersnet_red"
-                app:shapeAppearanceOverlay="@style/Button5" />
+                app:shapeAppearanceOverlay="@style/Button5"
+
+                />
+
+            <Button
+                android:id="@+id/girisogretmenYapBtnId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="40dp"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="GİRİŞ"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                android:visibility="gone"
+                app:backgroundTint="@color/dersnet_red"
+                app:shapeAppearanceOverlay="@style/Button5"
+
+                />
 
 
         </LinearLayout>
