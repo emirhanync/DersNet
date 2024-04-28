@@ -9,11 +9,11 @@ import com.example.otomat.R
 
 class ProgramFragment : Fragment() {
 
-    private lateinit var view: View
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_anasayfa , container , false)
-        return view
+        return inflater.inflate(R.layout.fragment_anasayfa , container , false)
     }
 
 }
+
