@@ -14,7 +14,7 @@
         android:title="@string/notlar" />
     <item
         android:id="@+id/profilicon"
-        android:icon="@drawable/ogrenci_kisi"
+        android:icon="@drawable/ogr"
         android:title="@string/profil" />
 
 </menu>
