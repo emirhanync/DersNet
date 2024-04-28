@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anasayfaicon"
+        android:icon="@drawable/anasayfa_icon"
+        android:title="DersNet" />
+    <item
+        android:id="@+id/Ders_programicon"
+        android:icon="@drawable/ogrenci_tablo"
+        android:title="Program" />
+    <item
+        android:id="@+id/sinav_notuicon"
+        android:icon="@drawable/sinav_ogrenci"
+        android:title="Notlar" />
+    <item
+        android:id="@+id/profilicon"
+        android:icon="@drawable/ogrenci_kisi"
+        android:title="Profil" />
+
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486015981449",
+    "project_id": "dersnet-488c2",
+    "storage_bucket": "dersnet-488c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486015981449:android:b241a465dbfad61c57f358",
+        "android_client_info": {
+          "package_name": "com.example.otomat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-t3oUbjiTURgp3J8IG6zhOStlYqM82GU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
