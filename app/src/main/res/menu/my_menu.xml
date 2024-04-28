@@ -3,18 +3,18 @@
     <item
         android:id="@+id/anasayfaicon"
         android:icon="@drawable/anasayfa_icon"
-        android:title="DersNet" />
+        android:title="@string/app_name" />
     <item
         android:id="@+id/Ders_programicon"
         android:icon="@drawable/ogrenci_tablo"
-        android:title="Program" />
+        android:title="@string/app_namee" />
     <item
         android:id="@+id/sinav_notuicon"
         android:icon="@drawable/sinav_ogrenci"
-        android:title="Notlar" />
+        android:title="@string/notlar" />
     <item
         android:id="@+id/profilicon"
         android:icon="@drawable/ogrenci_kisi"
-        android:title="Profil" />
+        android:title="@string/profil" />
 
 </menu>

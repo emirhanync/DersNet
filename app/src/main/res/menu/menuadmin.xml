@@ -3,15 +3,15 @@
     <item
         android:id="@+id/anasayfaicon"
         android:icon="@drawable/anasayfa_icon"
-        android:title="DersNet" />
+        android:title="@string/app_name" />
 
     <item
         android:id="@+id/sinav_notuicon"
         android:icon="@drawable/ogretmen"
-        android:title="Öğretmen" />
+        android:title="@string/ogretmen" />
     <item
         android:id="@+id/profilicon"
         android:icon="@drawable/ogr"
-        android:title="Öğrenci" />
+        android:title="@string/ogrenci" />
 
 </menu>

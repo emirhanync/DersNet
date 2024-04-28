@@ -5,8 +5,8 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Program"
-        android:textSize="50dp"
+        android:text="@string/app_namee"
+        android:textSize="50sp"
         android:fontFamily="@font/bubble"
         android:textColor="@color/dersnet_red"
         android:layout_centerInParent="true"

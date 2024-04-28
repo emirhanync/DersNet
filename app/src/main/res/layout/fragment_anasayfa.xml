@@ -5,8 +5,8 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Ana Sayfa"
-        android:textSize="50dp"
+        android:text="@string/ap_namee"
+        android:textSize="50sp"
         android:fontFamily="@font/bubble"
         android:textColor="@color/dersnet_red"
         android:layout_centerInParent="true"

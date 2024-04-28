@@ -12,9 +12,9 @@ class AnaSayfaFragment : Fragment() {
     private lateinit var view: View
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        view = inflater.inflate(R.layout.fragment_anasayfa , container , false)
-
+        val view = inflater.inflate(R.layout.fragment_anasayfa , container , false)
         return view
     }
 
 }
+
