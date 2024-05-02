@@ -13,6 +13,7 @@
         android:layout_height="150dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/logo"
+        android:contentDescription="dersnet"
 
         />
 
@@ -23,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/bubble"
         android:gravity="center"
-        android:text="DersNet"
+        android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="normal|italic" />
@@ -68,7 +69,7 @@
                     android:paddingTop="5dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="5dp"
-                    android:text="Öğrenci"
+                    android:text="@string/ogrenci"
                     android:textAlignment="center"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"
@@ -85,7 +86,7 @@
                     android:paddingTop="5dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="5dp"
-                    android:text="Öğretmen"
+                    android:text="@string/ogretmen"
                     android:textAlignment="center"
                     android:textColor="@color/dersnet_red"
                     android:textSize="16sp"
@@ -105,14 +106,14 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
-
+                    android:id="@+id/ogrenciTc_textInputId"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Öğrenci TC"
+                    android:hint="@string/ogrencitc"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:hintTextColor="#4E4A4A"
@@ -130,13 +131,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ogrenciSifre_textInputId"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Şifre"
+                    android:hint="@string/sifre"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:endIconMode="password_toggle"
@@ -168,13 +170,14 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ogretmentc_textinput"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Öğretmen TC"
+                    android:hint="@string/ogretmentc"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:hintTextColor="#4E4A4A"
@@ -192,13 +195,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ogretmensifre_inputlay"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Şifre"
+                    android:hint="@string/sifre"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:endIconMode="password_toggle"
@@ -229,13 +233,13 @@
                 android:layout_marginBottom="40dp"
                 android:elevation="15dp"
                 android:gravity="center"
-                android:text="GİRİŞ"
+                android:text="@string/giris"
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17sp"
                 app:backgroundTint="@color/dersnet_red"
                 app:shapeAppearanceOverlay="@style/Button5"
-
+                android:visibility="visible"
                 />
 
             <Button
@@ -249,7 +253,7 @@
                 android:layout_marginBottom="40dp"
                 android:elevation="15dp"
                 android:gravity="center"
-                android:text="GİRİŞ"
+                android:text="@string/giris"
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17sp"

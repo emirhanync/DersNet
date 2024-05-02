@@ -24,6 +24,6 @@ android:layout_height="60dp"
 app:backgroundColor="@color/dersnet_red"
 app:cornerRadius="20dp"
 app:indicatorRadius="7dp"
-app:menu="@menu/my_menu"
+app:menu="@menu/menuadmin"
     />
 </RelativeLayout>

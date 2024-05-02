@@ -3,9 +3,19 @@
     <string name="app_namee">Program</string>
     <string name="ap_namee">Anasayfa</string>
     <string name="ogrenci">Öğrenci</string>
+    <string name="giris">GİRİŞ</string>
+    <string name="ogrencitc">Öğrenci TC</string>
+    <string name="ogretmentc">Öğretmen TC</string>
+    <string name="sifre">Şifre</string>
     <string name="ogretmen">Öğretmen</string>
     <string name="profil">Profil</string>
     <string name="notlar">Notlar</string>
+    <string name="devam">Devam</string>
+    <string name="satir1">pazartesi</string>
+    <string name="satir2">salı</string>
+    <string name="satir3">çarşamba</string>
+    <string name="satir4">perşembe</string>
+    <string name="satir5">cuma</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
