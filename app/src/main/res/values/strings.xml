@@ -16,6 +16,7 @@
     <string name="satir3">çarşamba</string>
     <string name="satir4">perşembe</string>
     <string name="satir5">cuma</string>
+    <string name="adi">Adi Soyadi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

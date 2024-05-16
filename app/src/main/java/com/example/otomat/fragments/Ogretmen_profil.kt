@@ -10,7 +10,6 @@ import com.example.otomat.R
 
 class Ogretmen_profil : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -4,13 +4,6 @@
     android:background="@color/white"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/app_namee"
-        android:textSize="50sp"
-        android:fontFamily="@font/bubble"
-        android:textColor="@color/dersnet_red"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
 
 </RelativeLayout>
