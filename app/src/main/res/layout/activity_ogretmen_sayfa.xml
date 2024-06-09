@@ -9,21 +9,19 @@
     tools:context=".ogretmen_sayfa">
 
 
-
-<FrameLayout
-android:id="@+id/ogretmensayfa_container"
-android:layout_above="@id/smoothBarId"
-android:layout_width="match_parent"
-android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/ogretmensayfa_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/smoothBarId" />
 
     <me.ibrahimsn.lib.SmoothBottomBar
-android:id="@+id/smoothBarId"
-android:layout_alignParentBottom="true"
-android:layout_width="wrap_content"
-android:layout_height="60dp"
-app:backgroundColor="@color/dersnet_red"
-app:cornerRadius="20dp"
-app:indicatorRadius="7dp"
-app:menu="@menu/menuadmin"
-    />
+        android:id="@+id/smoothBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:backgroundColor="@color/dersnet_red"
+        app:cornerRadius="20dp"
+        app:indicatorRadius="7dp"
+        app:menu="@menu/menuadmin" />
 </RelativeLayout>

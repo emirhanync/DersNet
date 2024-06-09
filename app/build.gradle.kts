@@ -50,6 +50,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.airbnb.android:lottie:6.4.0")
-    implementation ("androidx.core:core-splashscreen:1.0.0")
+
     implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
 }

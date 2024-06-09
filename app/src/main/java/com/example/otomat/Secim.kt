@@ -31,6 +31,11 @@ class Secim : AppCompatActivity() {
     lateinit var ogrenciSifreInputLayout: TextInputLayout
     lateinit var ogretmentcinput: TextInputLayout
     lateinit var ogretmensifrelay: TextInputLayout
+
+    companion object {
+        lateinit var ogrenciTcStr: String
+        lateinit var ogretmenTcStr: String
+    }
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,12 +83,12 @@ class Secim : AppCompatActivity() {
             girisYap_Ogrenci( ogrenciTcInputLayout , ogrenciSifreInputLayout )
         }
         girisogretmen.setOnClickListener {
-            girisYap_Ogretmen( ogretmensifrelay , ogretmentcinput )
+            girisYap_Ogretmen( ogretmentcinput , ogretmensifrelay)
         }
 
     }
     private fun girisYap_Ogretmen(ogretmenTc: TextInputLayout , ogretmenSifre: TextInputLayout) {
-        val ogretmenTcStr = ogretmenTc.editText!!.text.toString().trim()
+        ogretmenTcStr = ogretmenTc.editText!!.text.toString().trim()
         val ogretmenSifreStr = ogretmenSifre.editText!!.text.toString().trim()
 
         if (ogretmenTcStr.isEmpty() || ogretmenSifreStr.isEmpty()) {
@@ -101,13 +106,11 @@ class Secim : AppCompatActivity() {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     var found = false
                     for (child in dataSnapshot.children) {
-                        val ogretmenTcStrFirebase = child.child("ogretmentc").value?.toString()
-                        val ogretmenSifreStrFirebase =
-                            child.child("ogretmensifre").value?.toString()
+                        val ogretmenTcStrFirebase: String = child.child("ogretmentc").value?.toString()!!
+                        val ogretmenSifreStrFirebase: String = child.child("ogretmensifre").value?.toString()!!
 
-                        if (ogretmenTcStrFirebase != null && ogretmenSifreStrFirebase != null &&
-                            ogretmenTcStrFirebase == ogretmenTcStr && ogretmenSifreStrFirebase == ogretmenSifreStr
-                        ) {
+                        if (ogretmenTcStrFirebase != null && ogretmenSifreStrFirebase != null && ogretmenTcStr.equals(ogretmenTcStrFirebase)
+                            && ogretmenSifreStr.equals(ogretmenSifreStrFirebase)) {
                             found = true
                             break
                         }
@@ -118,14 +121,12 @@ class Secim : AppCompatActivity() {
                         Toast.makeText(this@Secim, "hoşgeldin.", Toast.LENGTH_SHORT).show()
 
                         val intent = Intent(this@Secim, ogretmen_sayfa::class.java)
-                        intent.flags =
-                            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                         finish()
                     } else {
                         // If the credentials don't match, show login failed message
-                        Toast.makeText(this@Secim, "hatalı şifre veya Tc", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(this@Secim, "hatalı şifre veya Tc", Toast.LENGTH_SHORT).show()
                     }
                 }
 
@@ -142,7 +143,7 @@ class Secim : AppCompatActivity() {
         }
     }
     private fun girisYap_Ogrenci(ogrenciTc: TextInputLayout , ogrenciSifre: TextInputLayout) {
-        val ogrenciTcStr = ogrenciTc.editText!!.text.toString().trim()
+        ogrenciTcStr = ogrenciTc.editText!!.text.toString().trim()
         val ogrenciSifreStr = ogrenciSifre.editText!!.text.toString().trim()
 
         if (ogrenciTcStr.isEmpty() || ogrenciSifreStr.isEmpty()) {
@@ -164,7 +165,7 @@ class Secim : AppCompatActivity() {
                         val ogrenciSifreFirebase = child.child("ogrencisifre").value?.toString()
 
                         if (ogrenciTcFirebase != null && ogrenciSifreFirebase != null &&
-                            ogrenciTcFirebase == ogrenciTcStr && ogrenciSifreFirebase == ogrenciSifreStr) {
+                            ogrenciTcFirebase.equals(ogrenciTcStr) && ogrenciSifreFirebase.equals(ogrenciSifreStr)) {
                             found = true
                             break
                         }

@@ -8,10 +8,7 @@
         android:id="@+id/Ders_programicon"
         android:icon="@drawable/ogrenci_tablo"
         android:title="@string/app_namee" />
-    <item
-        android:id="@+id/sinav_notuicon"
-        android:icon="@drawable/sinav_ogrenci"
-        android:title="@string/notlar" />
+
     <item
         android:id="@+id/profilicon"
         android:icon="@drawable/ogr"

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/duyuruId"
+        android:icon="@drawable/sinav_ogrenci"
+        android:title="@string/notlar" />
+
     <item
         android:id="@+id/devam"
         android:icon="@drawable/devam"
         android:title="@string/devam" />
 
     <item
-        android:id="@+id/sinav_notuicon"
-        android:icon="@drawable/ogrenci_tablo"
-        android:title="@string/app_namee" />
-    <item
-        android:id="@+id/profilicon"
-        android:icon="@drawable/sinav_ogrenci"
-        android:title="@string/notlar" />
-    <item
         android:id="@+id/ogretmenprofil"
-        android:icon="@drawable/ogretmen"
+        android:icon="@drawable/ogretemen"
         android:title="@string/profil" />
 
 </menu>

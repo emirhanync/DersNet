@@ -5,6 +5,7 @@ import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.otomat.fragments.AnaSayfaFragment
+import com.example.otomat.fragments.Ogrenci_profil
 import com.example.otomat.fragments.ProgramFragment
 import me.ibrahimsn.lib.SmoothBottomBar
 
@@ -29,8 +30,8 @@ class Ogrenci_safya : AppCompatActivity() {
             when(it) {
                 0 -> defaultFragment = AnaSayfaFragment()
                 1 -> defaultFragment = ProgramFragment()
-                2 -> defaultFragment = AnaSayfaFragment()
-                3 -> defaultFragment = ProgramFragment()
+                2 -> defaultFragment = Ogrenci_profil()
+
             }
             supportFragmentManager.beginTransaction().replace(R.id.ogrencisayfa_container , defaultFragment).addToBackStack(null).commit()
         }

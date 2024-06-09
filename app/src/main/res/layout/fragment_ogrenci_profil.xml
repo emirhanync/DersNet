@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/dersnet_red"
+    android:background="@color/white"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <ImageView
         android:id="@+id/imageogrenci"
@@ -13,17 +14,61 @@
         android:scaleType="fitXY"
         android:background="@color/white"
         android:contentDescription="@string/adi"
+        android:src="@drawable/ogrenci"
          />
 
     <TextView
+        android:id="@+id/ogrenciadi"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/imageogrenci"
-        android:layout_marginStart="80sp"
+        android:layout_marginStart="50sp"
+        android:fontFamily="@font/bubble"
+        android:text="@string/app_namee"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/ogrenciaditc"
+        android:layout_below="@+id/ogrenciadi"
+        android:layout_marginStart="50sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bubble"
         android:text="@string/app_namee"
-        android:textColor="@color/white"
-        android:textSize="50sp" />
-
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/ogrenciDevamsizlik"
+        android:layout_below="@+id/ogrenciaditc"
+        android:layout_marginStart="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubble"
+        android:text="@string/app_namee"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/cikisYapBtnogrId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="15dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:text="Çıkış yap"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:backgroundTint="@color/dersnet_red"
+        app:shapeAppearanceOverlay="@style/Button5"
+        />
 
 </RelativeLayout>
